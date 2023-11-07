@@ -1,0 +1,48 @@
+\documentclass[a4paper]{exam}
+
+\usepackage{amsmath,amssymb, amsthm}
+\usepackage[a4paper]{geometry}
+\usepackage{hyperref}
+\usepackage{mdframed}
+
+\title{Weekly Challenge 12: Closure of Decidable Languages}
+\author{CS 212 Nature of Computation\\Habib University}
+\date{Fall 2023}
+
+\theoremstyle{theorem}
+\newtheorem{theorem}{Theorem}
+
+\theoremstyle{claim}
+\newtheorem{claim}{Claim}
+
+\qformat{{\large\bf \thequestion. \thequestiontitle}\hfill}
+\boxedpoints
+
+\printanswers
+
+\begin{document}
+\maketitle
+
+\begin{questions}
+
+\titledquestion{Put Together}
+
+  The \textit{put-together} operation, $f$, is defined on strings, $u=u_1u_2\ldots u_n$ and $v=v_1v_2\ldots v_n$, and extended to languages, $L_1$ and $L_2$, over an alphabet, $\Sigma$, as follows.
+  \begin{align*}
+    f(u,v) & = u_1u_2\ldots u_nv_1v_2\ldots v_n\\
+    f(L_1, L_2) & = \{ f(u,v) \mid u\in L_1, v\in L_2 \}.
+  \end{align*}
+  
+  Prove or disprove the following claim.
+   \begin{claim}
+     The class of decidable languages is closed under the put-together operation.
+   \end{claim}
+   
+  
+\end{questions}
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:
